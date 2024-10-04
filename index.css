@@ -1,0 +1,18 @@
+#feeds{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#local_video,#remote_video {
+  height: 300px;
+  width: 300px;
+  border-width: 2px;
+  border-color: red;
+  border-style: solid;
+  background-color: black;
+  margin: 10px;
+}
+
+
+

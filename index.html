@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title> Webrtc demo </title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body style="display: flex;flex-direction: column; gap: 10px;">
+  </div>
+  <div id="feeds">
+    <div id="local_feed">
+      <h3> local</h3>
+      <video id="local_video" playsInline autoPlay> </video>
+      <div>
+        <button onclick="enableVideo()">
+          Enable Video
+        </button>
+        <button onclick="disableVideo()">
+          Disable Video
+        </button>
+        <button id="joinroom_btn"> Join </button>
+        <button id="leaveroom_btn"> Leave </button>
+        </div>
+      </div>
+
+      <div id="remote_feed">
+        <h3> remote</h3>
+        <video id="remote_video" playsInline autoPlay> </video>
+      </div>
+    </div>
+
+
+    <button onclick="call()">Call</button>
+    <input id="sdpanswer" />
+    <button onclick="setanswer()">Set answer</button>
+  </div>
+  </div>
+  <input id="sdpofferinput" />
+  <button onclick="receive()">Receive</button>
+  </div>
+  <div id="messagebox">
+  </div>
+  <div id="sdpoffer">
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
